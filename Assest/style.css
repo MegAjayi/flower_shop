@@ -1,0 +1,19 @@
+.ul-1 img {
+    height: 20px;
+    color: white;
+}
+
+.ul-1{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav1 {
+    background-color: #5E00A6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
