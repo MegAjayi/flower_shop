@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .occasions-section {
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .occasions-section h2 span {
+    color: #7b3ff3;
+  }
+  .occasions-section h2{
+    font-size: 2.3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  .occasions-section p{
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  
+  .occasions-section {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .occasions-slider {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+  }
+  
+  .occasions-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .occasion-card {
+    flex: 0 0 auto;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .occasion-card:hover {
+    transform: translateY(-5px);
+  }
+  .slider-img{
+    background: #f8f6ff;
+    border-radius: 3.5rem;
+    padding: 1rem;
+    width: 150px;
+  }
+  .occasion-card img {
+    width: 100px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .occasion-card p {
+    font-weight: 600;
+  }
+  
+  .occasion-card span {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* Discounts */
+  .discounts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 3rem;
+  }
+  
+  .discount-card {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .discount-card img {
+    width: 45%;
+    border-radius: 50%;
+  }
+  
+  .discount-card.light {
+    background: #f8f6ff;
+  }
+  
+  .discount-card.purple {
+    background: #7b3ff3;
+    color: #fff;
+  }
+  
+  .discount-card .text {
+    max-width: 50%;
+  }
+  .discount-card .text h4 {
+    background-color: white;
+    border-radius: 30px;
+    width: 200px;
+    font-size: 1.2em;
+  }
+  
+  .discount-card .text .flat {
+    background-color: #7940ea;
+  }
+  .discount-card .text h2 {
+    font-size: 2.2em;
+  }
+  .discount-card button {
+    background: #7b3ff3;
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .discount-card.purple button {
+    background: #f79de2;
+    color: #7b3ff3;
+  }
+  
+  @media (max-width: 768px) {
+    .discount-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .discount-card img {
+      width: 100%;
+    }
+  
+    .discount-card .text {
+      max-width: 100%;
+    }
+  
+    .stats {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
